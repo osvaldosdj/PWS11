@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from empresarios.models import Empresas, Documento, Metricas
+from empresarios.models import Empresas, Documento
 
 def sugestao(request):
     areas = Empresas.area_choices
