@@ -4,7 +4,7 @@
 *.pyc
 __pycache__
 db.sqlite3
-media/documentos/*
+media/documentos/*.pdf
 
 # Backup files # 
 *.bak 

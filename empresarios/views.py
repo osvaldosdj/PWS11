@@ -64,7 +64,7 @@ def empresa(request, id):
     empresa = Empresas.objects.get(id=id)
 
     if empresa.user != request.user:
-        messages.add_message(request, constants.ERROR, "Essa empresa não é sua")
+        messages.add_message(request, constants.ERROR, "Você não pode alterar pois essa empresa não é sua")
         return redirect(f'/empresarios/listar_empresas')
 
     if request.method == "GET":
